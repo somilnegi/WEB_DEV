@@ -48,7 +48,7 @@ console.log(items.length);
 
 
 if (items.length===0) {
-    console.log("Array is not empty"); 
+     console.log("Array is not empty"); 
 }
 else {
     console.log("Array is not empty");
