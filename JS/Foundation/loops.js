@@ -95,18 +95,29 @@
 // }
 // console.log(preferredTeas);
 
-let cityPopulation = {
-    london: 8900000, 
-    "new york": 8400000,
-    paris: 2200000,
-    berlin: 3500000,
-}
-let cityPopulations = {}
 
-for (const city in cityPopulation) {
-    if (city == "berlin") {
-        break
+// let cityPopulation = {
+//     london: 8900000,
+//     "new york": 8400000,
+//     paris: 2200000,
+//     berlin: 3500000,
+// }
+// let cityPopulations = {}
+// for (const city in cityPopulation) {
+//     if (city == "berlin") {
+//         break
+//     }
+//     cityPopulations[city]=cityPopulation[city]
+// }
+// console.log(cityPopulations);
+
+
+let myWorldCities = ["Berlin", "Tokya", "Sydney", "Paris"]
+let travelledCities=[]
+myWorldCities.forEach(function (city) {
+    if (city === "Sydney") {
+        return;
     }
-    cityPopulations[city]=cityPopulation[city]
-}
-console.log(cityPopulations);
+    travelledCities.push(city);
+})
+console.log(travelledCities);
