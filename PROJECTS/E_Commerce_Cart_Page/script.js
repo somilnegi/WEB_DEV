@@ -6,9 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 3, name: "Product 3", price: 49.99 },
     ]
 
-    // Cart array
-    const cart = []
-
     // Selecting HTML elements
     const productList = document.getElementById('product-list')
     const cartItems = document.getElementById('cart-items')
@@ -16,6 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartTotal = document.getElementById('cart-total')
     const totalPriceDisplay = document.getElementById('total-price')
     const checkoutBtn = document.getElementById('checkout-btn')
+
+    // Cart array
+    const cart = JSON.parse(localStorage.getItem('cart')) || []
+    renderCart()
+
 
     // Displaying the products on the product list
     products.forEach(product => {
@@ -36,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const productId = parseInt(e.target.getAttribute('data-id'))  // Parse the string into the int
             const product = products.find(p => p.id === productId) // Find the product-id in the products array
             addToCart(product)
+            addCartToLocal()
         }
     })
 
@@ -86,8 +89,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (index !== -1) {
                 cart.splice(index, 1); // Remove item from cart
                 renderCart(); // Update UI
+                addCartToLocal()
             }
         }
     })
+
+    // Adding the cart to local storage
+    function addCartToLocal() {
+        localStorage.setItem('cart',JSON.stringify(cart));
+    }
 
 })
