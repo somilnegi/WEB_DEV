@@ -7,8 +7,6 @@ const consoleLogFormat = format.combine(
         return `${level}:${message}`
     })
 );
-
-// Create a Winston logger
 const logger = createLogger({
     level: 'info',
     format: combine(
