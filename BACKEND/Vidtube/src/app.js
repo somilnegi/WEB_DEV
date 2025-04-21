@@ -18,7 +18,12 @@ app.use(express.static("public"))
 app.use(cookieParser())
 // Import routes
 import healthCheckRouter from "./routes/healthCheck.routes.js"
+import router from "./routes/user.routes.js"
+import { errorHandler } from "./middlewares/error.middlewares.js"
 
 // Routes
 app.use("/api/v1/healthcheck", healthCheckRouter)
+app.use("/api/v1/users", router)
+// app.use(errorHandler)
+
 export {app}
