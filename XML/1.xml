@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+
+    <student1>
+        <name>Somil</name>
+        <physics>94</physics>
+        <english>97</english>
+        <science>91</science>
+    </student1>
+
+    <student2>
+        <name>Sahil</name>
+        <physics>99</physics>
+        <english>92</english>
+        <science>90</science>
+    </student2>
+
+    <student3>
+        <name>Sohail</name>
+        <physics>90</physics>
+        <english>92</english>
+        <science>91</science>
+    </student3>
+
+</result>
