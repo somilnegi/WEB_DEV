@@ -11,7 +11,11 @@ function App() {
     if (counter > 20) {
       counter=20;
     }
-    setCounter(counter)
+    setCounter((prevCounter)=>prevCounter+1)
+    setCounter((prevCounter)=>prevCounter+1)
+    setCounter((prevCounter)=>prevCounter+1)
+    setCounter((prevCounter)=>prevCounter+1)
+    // setCounter(counter)
     console.log("clicked", counter);
     
   }
