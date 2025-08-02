@@ -1,3 +1,5 @@
+// useState is a react hook, which creates an 'state variable'. It helps us to track state in components and updates the user interface when the state changes.
+
 import { useState } from 'react'
 import './App.css'
 
