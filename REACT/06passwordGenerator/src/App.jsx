@@ -41,7 +41,7 @@ function App() {
   }, [length, useNum, useChar, passwordGenerator])
 
   return (
-    <>
+    <div className='flex items-center justify-center h-screen bg-slate-900'>
       <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-600 text-center'>
         <h1 className='text-white text-center my-3'>Password Generator</h1>
         <div className='flex shadow rounded-lg overflow-hidden mb-4'>
@@ -63,7 +63,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
