@@ -1,6 +1,14 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 import './App.css'
 
+// useState: Hook to manage state (e.g., password, length, toggle options).
+
+// useCallback: Hook to memoize functions so they don't get recreated on every render.
+
+// useEffect: Hook to perform side effects (like generating the password when dependencies change).
+
+// useRef: Hook to reference DOM elements (used here for copying the password).
+
 function App() {
 
   const [length, setLength] = useState(8)
@@ -22,7 +30,7 @@ function App() {
     }
     
     for (let i = 1; i <= length; i++) {
-      let char=Math.floor(Math.random()*str.length+1)
+      let char=Math.floor(Math.random()*str.length)
       pass+=str.charAt(char)
     }
     setPassword(pass)
