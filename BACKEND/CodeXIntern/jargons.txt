@@ -1,0 +1,19 @@
+Server:	A machine or software that handles client requests and serves responses (e.g., Node.js, Django server).
+
+API (Application Programming Interface):	A set of rules that allows communication between frontend and backend (REST, GraphQL).
+
+Endpoint:	A specific route on an API where a request can be made (e.g., /users/login).
+
+Middleware:	Functions that run between request and response, often used for authentication, logging, etc.
+
+Routes: Routes define how a server responds to different HTTP requests (like GET, POST, PUT, DELETE) at specific URLs.
+
+Router:	Defines how requests are routed to specific handlers or controllers.
+
+Controller:	Handles the logic for a specific endpoint or route, often communicates with services or models.
+
+Service Layer:	Contains business logic, separated from controllers for modularity.
+
+Model:	Represents the data structure or schema (often linked to a database table).
+
+ORM (Object-Relational Mapping):	A tool to interact with databases using objects rather than raw SQL (e.g., Sequelize, Hibernate).
