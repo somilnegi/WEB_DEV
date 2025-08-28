@@ -1,5 +1,9 @@
 import React from 'react'
-import {Link, NavLink} from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+
+// Link: The basic navigation component in React Router. It works like an <a> tag but doesn't reload the page. It uses the React Router history API to update the URL. Best for simple navigation.
+
+// NavLink: It is like Link but with extra styling features. It automatically adds an active class using a special prop (isActive) when the link matches the current URL. Best for navigation menus.
 
 export default function Header() {
     return (
